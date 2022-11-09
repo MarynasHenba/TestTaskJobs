@@ -1,14 +1,14 @@
 import React from 'react';
 import { Job } from '../interfaces/Job';
 import { ImLocation } from 'react-icons/im';
-import { StaticGoogleMap, Marker } from 'react-static-google-map';
+// import { StaticGoogleMap, Marker } from 'react-static-google-map';
 
 interface ContactsMapProps {
 	item: Job;
 }
 
 export default function ContactsMap({ item }: ContactsMapProps): JSX.Element {
-	const API_KEY = 'AIzaSyCQxWoUj5tZ2xzY-hVuo55d_5k3DKj-rwE';
+	// const API_KEY = 'YOUR_API_KEY';
 
 	return (
 		<section className='lg:w-[400px] md:w-[250px] sm:w-full w-full'>
@@ -26,7 +26,7 @@ export default function ContactsMap({ item }: ContactsMapProps): JSX.Element {
 				<p className='text-lg leading-6 mb-2'>{item.phone}</p>
 				<p className='text-lg leading-6'>{item.email}</p>
 			</div>
-			<div>
+			{/* <div>
 				<StaticGoogleMap
 					size='400x200'
 					className='img-fluid rounded-md lg:w-[400px] md:w-[250px] sm:w-full w-full'
@@ -37,7 +37,7 @@ export default function ContactsMap({ item }: ContactsMapProps): JSX.Element {
 						color='blue'
 					/>
 				</StaticGoogleMap>
-			</div>
+			</div> */}
 		</section>
 	);
 }
